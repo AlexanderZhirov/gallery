@@ -1,0 +1,51 @@
+<!-- BEGIN: page -->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Галерея</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="/views/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="/views/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/views/css/mycss.css">
+        <script type="text/javascript" src="/views/js/jquery.js"></script>
+        <script type="text/javascript" src="/views/js/main.js"></script>
+        <script type="text/javascript" src="/views/js/mylib.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="menu_icon"></div>
+            <nav>
+                <ul>
+                    <li><a href="/" class="selected">На главную</a></li>
+                    <!-- BEGIN: reg -->
+                    <li><a href="../registration" class="selected">Зарегистрироваться</a></li>
+                    <!-- END: reg -->
+                    <!-- BEGIN: login -->
+                    <li><a href="../autorization" class="selected">Войти</a></li>
+                    <!-- END: login -->
+                    <!-- BEGIN: logout -->
+                    <li><a href="../mygallery" class="selected">Моя галерея</a></li>
+                    <li><a href="../download" class="selected">Загрузить изображение</a></li>
+                    <li><a href="../settings" class="selected">Настройки</a></li>
+                    <li><a href="../logout" class="selected">Выйти</a></li>
+                    <!-- END: logout -->
+                </ul>
+            </nav>
+            <div class="footer clearfix">
+            </div >
+        </header>
+        <section class="main clearfix parse_image">
+            {FILE "images.html"}
+            {FILE "image.html"}
+            {FILE "downloadimages.html"}
+            {FILE "autorization.html"}
+            {FILE "registration.html"}
+            {FILE "mygallery.html"}
+            {FILE "settings.html"}
+            {FILE "recovery.html"}
+            {FILE "userrecovery.html"}
+        </section>
+    </body>
+</html>
+<!-- END: page -->

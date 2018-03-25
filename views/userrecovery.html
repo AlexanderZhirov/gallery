@@ -1,0 +1,28 @@
+<!-- BEGIN: userrecovery -->
+<section class="top">	
+    <div class="wrapper content_header clearfix">
+        <h1 class="title">Восстановление пароля</h1>
+    </div>		
+</section>
+
+<section class="wrapper">
+    <div class="content">
+        <!-- BEGIN: errors -->
+        <span class="errors">{errors}</span><br>
+        <!-- END: errors -->
+        <form action="" method="post">
+            <div>
+                <label for="password_one">Новый пароль:</label>
+                <input type="password" name="password_one" id="password_one" value="{password_one}">
+            </div>
+            <div>
+                <label for="password_two">Повтор пароля:</label>
+                <input type="password" name="password_two" id="password_two" value="{password_two}">
+            </div> 
+            <div>
+                <input type="submit" name="submit" value="Изменить пароль">
+            </div>
+        </form>
+    </div>
+</section>
+<!-- END: userrecovery -->

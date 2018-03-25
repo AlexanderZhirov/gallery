@@ -1,0 +1,5 @@
+03.22.2018, 0:20:30 -> Ошибка при добавлении в базу данных: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'description' at row 1
+03.22.2018, 0:21:36 -> Ошибка при добавлении в базу данных: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'description' at row 1
+03.22.2018, 0:21:51 -> Ошибка при добавлении в базу данных: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'description' at row 1
+03.22.2018, 0:24:47 -> Ошибка при добавлении в базу данных: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'description' at row 1
+03.22.2018, 1:45:05 -> Ошибка при получении изображения: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id = '25'' at line 1

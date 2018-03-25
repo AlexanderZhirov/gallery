@@ -1,0 +1,41 @@
+<!-- BEGIN: image -->
+<section class="top">	
+    <div class="wrapper content_header clearfix">
+        <h1 class="title">{i.description}</h1>
+    </div>		
+</section>
+
+<section class="wrapper">
+    <!-- BEGIN: delete -->
+    <div class="content_delete">
+        <form action="" method="post">
+            <div>
+                <input type="hidden" name="image" id="image" value="{i.id}">
+                <input type="submit" name="submit" value="Удалить изображение">
+            </div>
+        </form>
+    </div>
+    <!-- END: delete -->
+    <div class="content">
+        <img src="../upload/{i.name}" alt=""/>
+    </div>
+</section>
+<!-- END: image -->
+<!-- BEGIN: emptyimage -->
+<section class="top">	
+    <div class="wrapper content_header clearfix">
+        <h1 class="title">Изображение отсутствует</h1>
+    </div>		
+</section>
+
+<section class="wrapper">
+    <div class="content">
+        <!-- BEGIN: none -->
+        <p>Данное изображение было удалено или ещё не загружено.</p>
+        <!-- END: none -->
+        <!-- BEGIN: dontmy -->
+        <p>Данное изображение отсутствует в Вашей галереи.</p>
+        <!-- END: dontmy -->
+    </div>
+</section>
+<!-- END: emptyimage -->

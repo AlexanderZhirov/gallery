@@ -1,0 +1,43 @@
+<!-- BEGIN: registration -->
+<section class="top">	
+    <div class="wrapper content_header clearfix">
+        <h1 class="title">Регистрация нового пользователя</h1>
+    </div>		
+</section>
+
+<section class="wrapper">
+    <div class="content">
+        <!-- BEGIN: message -->
+        <span class="message">{message}</span><br>
+        <!-- END: message -->
+        <!-- BEGIN: errors -->
+        <span class="errors">{errors}</span><br>
+        <!-- END: errors -->
+        <form action="" method="post">
+            <div>
+                <label for="name">Имя</label>
+                <input type="text" name="name" id="name" value="{p.name}">
+            </div>
+            <div>
+                <label for="login">Логин (используется для входа на сайт):</label>
+                <input type="text" name="login" id="login" value="{p.login}">
+            </div>
+            <div>
+                <label for="password_one">Пароль:</label>
+                <input type="password" name="password_one" id="password_one" value="{p.password_one}">
+            </div>
+            <div>
+                <label for="password_two">Повтор пароля:</label>
+                <input type="password" name="password_two" id="password_two" value="{p.password_two}">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" value="{p.email}">
+            </div>    
+            <div>
+                <input type="submit" name="submit" value="Зарегистрироваться">
+            </div>
+        </form>
+    </div>
+</section>
+<!-- END: registration -->

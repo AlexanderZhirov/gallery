@@ -1,0 +1,64 @@
+<!-- BEGIN: settings -->
+<section class="top">	
+    <div class="wrapper content_header clearfix">
+        <h1 class="title">Настройки профиля</h1>
+    </div>		
+</section>
+
+<section class="wrapper">
+    <div class="content">
+        <!-- BEGIN: message -->
+        <span class="message">{message}</span><br>
+        <!-- END: message -->
+        <!-- BEGIN: errors -->
+        <span class="errors">{errors}</span><br>
+        <!-- END: errors -->
+        <h3>Персональные настройки</h3>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="name">Ваше настоящее имя:</label>
+                <input type="text" name="name" id="name" value="{name}">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email" value="{email}">
+                <!-- BEGIN: tempemail -->
+                <div>
+                    <span>Смена текущего e-mail на {tempemail}</span>
+                    <label for="deleteemail">Отменить запрос на смену E-mail</label>
+                    <input type="checkbox" name="deleteemail" id="deleteavatar" value="true">
+                </div>
+                <!-- END: tempemail -->
+            </div>
+            <div>
+                <label for="password_one">Новый пароль:</label>
+                <input type="password" name="password_one" id="password_one" value="{password_one}">
+            </div>
+            <div>
+                <label for="password_two">Повтор нового пароля:</label>
+                <input type="password" name="password_two" id="password_two" value="{password_two}">
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Применить">
+            </div>
+        </form>
+        <h3>Авторизованные устройства</h3>
+        <p>{lastInAccount}</p>
+        <!-- BEGIN: mydevice -->
+        <div id="container">
+            <span>Нажмите на устройство, чтобы деактивировать его</span>
+            <div id="scrollbox" >
+                <div id="content" >
+                    <!-- BEGIN: i -->
+                    <div class="stringdevice">
+                        <span data-id="{i.id}" data-userid="{i.userid}" class="device">{i.browser} - {i.devicename} ({i.ip})</span>
+                    </div>
+                    <!-- END: i -->
+                </div>
+            </div>
+            <p><span id="status" ></span></p>
+        </div>
+        <!-- END: mydevice -->
+    </div>
+</section>
+<!-- END: settings -->
